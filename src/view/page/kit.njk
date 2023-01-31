@@ -1,0 +1,8 @@
+{% set inject = { layoutClass: "page page_theme layout deco kit"} %}
+{% extends "layout/layout.njk" %}
+{% block main %}
+    {% set kit = {sectionName: "Buttons"} %}
+    {% include "kit/section/kit-button-section.njk" %}
+    {% set kit = {sectionName: "Input"} %}
+    {% include "kit/section/kit-input-section.njk" %}
+{% endblock main %}
