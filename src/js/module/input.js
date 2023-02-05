@@ -23,7 +23,6 @@ $(() => {
 /**************/
 $(() => {
   const $inputs = $('.input')
-  console.log('inputs', $inputs)
   $inputs.on('mouseover', ({ target }) => {
     const $item = $(target.closest('.input'))
     $item.addClass('input_state_hover')

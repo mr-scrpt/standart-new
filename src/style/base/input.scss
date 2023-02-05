@@ -52,6 +52,14 @@
   border-color: blue;
 }
 
+.input.input_state_disabled {
+  border-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: not-allowed;
+  .input__control {
+    cursor: not-allowed;
+  }
+}
 /*Виды полей КОНЕЦ*/
 
 /*Размеры полей*/
@@ -62,6 +70,8 @@
     width: 100%;
   }
 }
+
+/*Размеры полей КОНЕЦ*/
 
 /*S - Начало*/
 .input.input_size_s {
