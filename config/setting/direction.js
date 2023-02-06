@@ -21,7 +21,7 @@ export const direction = {
     js: `${srcFolder}/js/app.js`,
     image: `${srcFolder}/img/regular/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
     // svg: `${srcFolder}/img/**/*.svg`,
-    scss: `${srcFolder}/style/style.scss`,
+    scss: `${srcFolder}/style/app.scss`,
     html: `${srcFolder}/*.html`, //.pug
     nunjak: `${srcFolder}/view/page/*.njk`, //.pug
     font: `${srcFolder}/font/*.{woff,woff2,ttf,otf}`,

@@ -1,4 +1,4 @@
-/* Библиотеки */
+/*  Библиотеки */
 @import './lib/smart-grid';
 
 /* INIT */
@@ -22,7 +22,9 @@
 @import './base/icon';
 @import './base/img';
 @import './base/input';
-@import './base/label';
+// @import './base/label';
+@import './base/radio-group';
+@import './base/radio';
 @import './base/link';
 @import './base/logo';
 @import './base/relative-box';
