@@ -1,4 +1,4 @@
-.label {
+.input-group {
   &__inner {
     display: flex;
     flex-wrap: wrap;
@@ -9,17 +9,18 @@
   }
 }
 
-.label.label_type_split {
-  .label__inner {
+.input-group.input-group_type_split {
+  background-color: red;
+  .input-group__inner {
     flex-wrap: nowrap;
     gap: 15px;
   }
 }
-.label.label_type_nosplit {
-  .label__title {
+.input-group.input-group_type_nosplit {
+  .input-group__title {
     width: 100%;
   }
-  .label__box {
+  .input-group__box {
     width: 100%;
   }
 }
