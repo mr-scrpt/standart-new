@@ -9,6 +9,7 @@ $(document).ready(() => {
   $textarea.on('focus', ({ target }) => {
     const $item = $(target.closest('.textarea'))
     $item.addClass('textarea_state_focus')
+    $item.removeClass('textarea_state_hover')
   })
 
   $textarea.on('blur', ({ target }) => {
