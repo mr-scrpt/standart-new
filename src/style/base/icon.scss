@@ -1,7 +1,7 @@
 .icon {
   display: inline-block;
 
-  min-width: 1em;
+  min-width: 0.5em;
   margin: 0;
   padding: 0;
 
@@ -32,6 +32,9 @@
 /* Используется в качестве вспомогательного, декоративного элемента */
 /* Размеры получает через блок родителя, например button */
 
+.icon.icon_twitter {
+  background-image: url('/img/regular/icon/icon_twitter.svg');
+}
 .icon.icon_fb {
   mask-image: url('/img/regular/icon/icon_fb.svg');
   background-color: blue;
@@ -70,7 +73,7 @@
   mask-image: url('/img/regular/icon/icon_arrow.svg');
   background-color: blue;
   &_r_180 {
-    transform: rotate(180deg);
+    transform: scaleX(-1);
   }
 }
 .icon.icon_burger {

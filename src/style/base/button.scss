@@ -109,7 +109,9 @@
 
 /* Получаме квадрат, например line-height: 32px, тогда и width: 32px */
 .button .icon {
-  background-size: contain;
+  // background-size: contain;
+  // background-size: unset;
+  transform: scale(0.5);
 }
 
 .button .icon + .button__text {
