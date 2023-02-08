@@ -30,9 +30,14 @@
   color: black;
 }
 
+/*Вью полей*/
 .input.input_view_primary {
   border: 1px solid black;
+  & .input__control::placeholder {
+    color: #ccc;
+  }
 }
+/*Вью полей КОНЕЦ*/
 
 /*Стэйт полей*/
 
@@ -60,9 +65,9 @@
     cursor: not-allowed;
   }
 }
-/*Виды полей КОНЕЦ*/
+/* Стэйт полей КОНЕЦ*/
 
-/*Размеры полей*/
+/* Модификации */
 
 .input.input_width_available {
   width: 100%;
@@ -71,7 +76,7 @@
   }
 }
 
-/*Размеры полей КОНЕЦ*/
+/*Модификации КОНЕЦ*/
 
 /*S - Начало*/
 .input.input_size_s {

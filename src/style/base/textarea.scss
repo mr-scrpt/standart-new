@@ -6,50 +6,86 @@
   margin: 0;
   padding: 0;
   min-height: 10em;
-  border-radius: 3px;
-  /*background-color: white;*/
+  outline: none;
+}
+
+/*Вью полей*/
+.textarea.textarea_view_primary {
   @include ts(border-color);
-  border: 1px solid red;
+  border: 1px solid black;
   outline: none;
   color: darkblue;
+  &::placeholder {
+    color: #ccc;
+  }
+}
+/*Вью полей КОНЕЦ*/
 
-  /*  trns($th, border-color, box-shadow); */
-}
-
-.textarea::-webkit-input-placeholder {
-  color: #999;
-  text-indent: 0;
-}
-.textarea::-moz-placeholder {
-  opacity: 1;
-  color: #999;
-}
-.textarea.textarea_focused {
-  border-color: yellow;
+/*Стэйт полей*/
+.textarea.textarea_state_focus {
+  border-color: green;
   /*box-shadow: 0 0 0 1px gray;*/
 }
+.textarea.textarea_state_hover {
+  border-color: pink;
+  /*box-shadow: 0 0 0 1px gray;*/
+}
+.textarea.textarea_state_error {
+  border-color: red;
+}
+
+.textarea.textarea_state_success {
+  border-color: blue;
+}
+
+.textarea.textarea_state_disabled {
+  border-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: not-allowed;
+}
+
+/* Стэйт полей КОНЕЦ*/
+
+/* Модификации */
 .textarea.textarea_width_available {
   width: 100%;
   resize: vertical;
 }
 
+/* Стэйт полей КОНЕЦ*/
+
+/*S - Начало*/
 .textarea.textarea_size_s {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 16px;
-  padding-left: 6px;
+  padding: 3px 5px;
+  border-radius: 3px;
 }
+/*S - КОНЕЦ*/
+
+/*M - Начало*/
 .textarea.textarea_size_m {
   font-size: 13px;
   line-height: 18px;
   padding: 3px 5px;
+  border-radius: 4px;
 }
+/*M - КОНЕЦ*/
+
+/*L - Начало*/
 .textarea.textarea_size_l {
   font-size: 15px;
   line-height: 20px;
   padding: 5px 7px;
+  border-radius: 5px;
 }
+/*L - КОНЕЦ*/
+
+/*XL- Начало*/
 .textarea.textarea_size_xl {
   font-size: 18px;
   line-height: 22px;
-  padding-left: 11px;
+  padding: 6px 9px;
+  border-radius: 6px;
 }
+/*XL - КОНЕЦ*/
