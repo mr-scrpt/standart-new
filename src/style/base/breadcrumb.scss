@@ -1,0 +1,45 @@
+.breadcrumbs {
+  &__inner {
+    display: flex;
+    overflow: auto;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    padding: 25px 15px 25px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    &:after {
+      position: absolute;
+      color: gray;
+      content: '/';
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:last-child {
+      &:after {
+        mask-image: none;
+        background-color: transparent;
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    color: gray;
+    &_active {
+      /*font-weight: 700;*/
+      color: darkblue;
+    }
+  }
+}
