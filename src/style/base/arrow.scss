@@ -4,26 +4,29 @@
     gap: 15px;
   }
 
+  &__icon {
+    width: 10px;
+    height: 15px;
+  }
+
   &__item {
-    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 43px;
+    height: 43px;
+
     border: 1px solid blue;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include ts(background-color);
 
     &:hover {
       background-color: blue;
+
       .arrow__icon {
         background-color: orange;
       }
     }
-  }
-
-  &__icon {
-    width: 10px;
-    height: 15px;
+    @include ts(background-color);
   }
 }

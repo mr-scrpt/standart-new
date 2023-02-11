@@ -2,8 +2,8 @@ import $ from 'jquery'
 
 $(() => {
   const $parent = $('.adaptive')
-  const $controller = $parent.find('.adaptive__controller')
-  const $box = $parent.find('.adaptive__box')
+  const $controller = $parent.find('.adaptive__contller')
+  // const $box = $parent.find('.adaptive__box')
   const brakepoint = 994
   let isOpen = false
 
