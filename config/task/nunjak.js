@@ -29,7 +29,7 @@ export const nunjak = () => {
       .pipe(
         app.plugin.ifCustom(
           app.isBuild,
-          app.plugin.replace(/\.css/gm, '.css.min')
+          app.plugin.replace(/\app.css/gm, 'app.css.min')
         )
       )
       .pipe(app.plugin.ifCustom(app.isBuild, webpHtmlNosvg()))

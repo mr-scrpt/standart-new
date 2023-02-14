@@ -65,8 +65,8 @@ export const js = () => {
         },
         plugins: [
           new MiniCssExtractPlugin({
-            filename: `../../${app.direction.build.css}/vendor.min.css`,
-            chunkFilename: `../../${app.direction.build.css}/vendor.min.css`,
+            filename: `../../${app.direction.build.css}/vendor.css`,
+            chunkFilename: `../../${app.direction.build.css}/vendor.css`,
           }),
         ],
       })
