@@ -4649,7 +4649,7 @@ gulp-autoprefixer@latest:
     through2 "^4.0.2"
     vinyl-sourcemaps-apply "^0.2.1"
 
-gulp-clean-css@latest:
+gulp-clean-css@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/gulp-clean-css/-/gulp-clean-css-4.3.0.tgz#5b1e73f2fca46703eb636014cdd4553cea65146d"
   integrity sha512-mGyeT3qqFXTy61j0zOIciS4MkYziF2U594t2Vs9rUnpkEHqfu6aDITMp8xOvZcvdX61Uz3y1mVERRYmjzQF5fg==
